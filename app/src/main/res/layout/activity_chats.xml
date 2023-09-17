@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ChatsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chatsToolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/currentProfilePictureIv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/currentDisplayNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="display name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <!-- log out button -->
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/baseline_logout_24"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="10dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/chats_list_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chatsToolbar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/chat_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10pt"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

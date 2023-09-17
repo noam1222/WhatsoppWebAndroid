@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(to bottom, #f2f0f9, #f2f0f9);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top half of the page */
+.top {
+    height: 20vh;
+    background-color: #2a7c4f;
+}
+
+/* Bottom half of the page */
+.bottom {
+    height: 80vh;
+    background-color: #f2f0f9
+}
+
+h4 {
+    background-color: #F8F9FA;
+}
+
+
+form {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    padding-top: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.profilePicture {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.help-block {
+    color: rgb(189, 50, 50);
+    font-size: small;
+}

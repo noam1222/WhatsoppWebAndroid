@@ -1,0 +1,256 @@
+body {
+    background: linear-gradient(to bottom, #f2f0f9, #f2f0f9);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top half of the page */
+.top {
+    height: 20vh;
+    background-color: #2a7c4f;
+}
+
+/* Bottom half of the page */
+.bottom {
+    height: 80vh;
+    background-color: #f2f0f9
+}
+
+#logout {
+    float: right;
+    margin: 10px;
+    font-size: 2.6vh;
+}
+
+#chatsBox {
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#leftPanel {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    background-color: rgba(163, 78, 29, 0.13);
+    border-radius: 10px;
+    /* overflow-y: auto; */
+}
+
+#contacts-list {
+    background-color: rgba(163, 78, 29, 0.13);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    /* overflow-y: auto; */
+}
+
+#chatPanel {
+    width: 66.67%;
+    height: 100%;
+    float: right;
+}
+
+.row-pannel {
+    width: 100%;
+    height: 10%;
+    float: top;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px none rgb(172, 166, 166);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.25vw;
+}
+
+.top-inner-panel {
+    background-color: #CCCCCC;
+    padding-right: 5px;
+}
+
+button#deleteChat {
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: rgb(43, 39, 39);
+    height: 90% !important;
+    width: 10% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-panel {
+    height: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.contact-info-panel:hover {
+    background-color: rgba(0, 0, 255, 0.137);
+}
+
+.open-chat-contact {
+    background-color: dodgerblue;
+}
+
+#chatDialog {
+    width: 100%;
+    height: 80%;
+    background-color: #ffecce;
+    word-break: break-word;
+}
+
+#spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 67%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+#messages-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: auto;  
+}
+
+#message-sending {
+    width: 100%;
+    height: 10%;
+    float: bottom;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffecce;
+}
+
+#contacts-list {
+    width: 100%;
+    height: 90%;
+    float: bottom;
+}
+
+.profile-picture {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 80%;
+    width: 15%;
+}
+
+.currnet-profile-picture {
+    width: 10%;
+}
+
+.username {
+    width: 70%;
+    justify-content: flex-start;
+}
+
+.current-username {
+    width: 90%;
+}
+
+.contact-info {
+    width: 50%;
+    height: 10%;
+    margin-left: 3px;
+    margin-bottom: 10%;
+}
+
+.username-in-list {
+    font-weight: bold;
+}
+
+.last-message {
+    font-size: smaller;
+}
+
+#add-contact-icon {
+    width: 20%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+.last-message-date-and-time {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: flex-start;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: .75vw;
+}
+
+#send-input {
+    width: 90% !important;
+    height: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1.5vw;
+}
+
+#send-button {
+    height: 90% !important;
+    width: 10% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3px;
+}
+
+.message {
+    display: inline-block;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 1.4vw;
+}
+
+.outcoming {
+    background-color: rgb(85, 184, 40);
+    margin-left: 5px;
+    align-self: self-start;
+    border-top-left-radius: 0;
+
+}
+
+.incoming {
+    background-color: #6fc4cf;
+    align-self: self-end;
+    margin-right: 5px;
+    border-top-right-radius: 0;
+}
+
+.message-time {
+    font-size: 0.75vw;
+    color: rgba(255, 255, 255, 0.884);
+    text-align: right;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+
+span {
+    color: black;
+}
+
+img {
+    margin-bottom: 0;
+}

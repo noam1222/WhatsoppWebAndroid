@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Whatsop Web</string>
+    <string name="usernameHint">Username</string>
+    <string name="passwordHint">Password</string>
+    <string name="loginBtn">Login</string>
+    <string name="click">Click here</string>
+    <string name="registerHint">Not registered yet?</string>
+    <string name="contactHint">New Contact</string>
+    <string name="addContact">Add</string>
+    <string name="settings_title">Settings</string>
+    <string name="set_server_url">Set Server URL</string>
+    <string name="server_url_hint">Edit Server URL</string>
+    <string name="set_server">Set Server</string>
+    <string name="themes_title">Set Theme</string>
+    <string name="etUsername">Username:</string>
+    <string name="etPassword">Password:</string>
+    <string name="etVerifyPassword">Verify Password:</string>
+    <string name="etDisplayName">Display Name:</string>
+    <string name="btnRegister">Register</string>
+    <string name="messagesChannel">Messages Channel</string>
+    <string name="messageChannelDescription">The messages Channel</string>
+    <string name="channelMessageId">1</string>
+    <string name="usersChannel">Users Channel</string>
+    <string name="usersChannelDescription">The users Channel</string>
+    <string name="usersMessageId">2</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MessagesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/messagesToolBar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/activeChatProfilePictureIv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/activeChatDisplayNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Contact name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/messages_list_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/button_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/messagesToolBar"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/message_item" />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/messageEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter message:"
+            />
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_send"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

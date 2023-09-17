@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- Settings icon -->
+        <ImageView
+            android:id="@+id/ivSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings" />
+
+        <!-- Settings title -->
+        <TextView
+            android:id="@+id/tvSettingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Rest of the content -->
+<!--set server url-->
+    <TextView
+        android:id="@+id/textViewSetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/set_server"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextServerUrl"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSetTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="72dp"/>
+
+    <Button
+        android:id="@+id/btnSetServerUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:text="@string/set_server_url" />
+<!--Theme-->
+    <TextView
+        android:id="@+id/textViewSetTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/themes_title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+
+        <RelativeLayout
+            android:id="@+id/greenRectangle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_green"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onRectangleClicked">
+
+            <!-- Add content inside the rectangle -->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/purpleRectangle"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_purple"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onRectangleClicked">
+
+            <!-- Add content inside the rectangle -->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

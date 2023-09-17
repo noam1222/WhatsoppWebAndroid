@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentMessageLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/messageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/outcoming"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/messageContentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:breakStrategy="balanced"
+            android:maxWidth="240dp"
+            android:text="Message Content"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/messageTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message Time"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
